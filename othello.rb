@@ -73,7 +73,7 @@ class Othello
       MAX_COL.times do #2つ目の配列の中にBLANKを10個作成
         row << BLANK
       end
-      @@field << row # @@fieldにBLANKが10個入る
+      @@field << row # @@fieldにBLANKが10個入る(row << BLANK)
     end
     0.upto(MAX_COL - 1) do |i| # 配列は0スタートなため-1する(0-9を代入できる) 
       @@field[0][i] = WALL            # 最上部に■を配置
